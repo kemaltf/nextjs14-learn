@@ -3,6 +3,7 @@ import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
 import { fetchCustomers } from "@/app/lib/data";
 
 export default async function Page() {
+  // fetchCustomers is already no store, so it is run dynamically
   const customers = await fetchCustomers();
 
   return (
